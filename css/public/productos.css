@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+
+}
+
+
+/* Header y navegación */
+header {
+    position: sticky;
+
+
+    background-color:  rgb(22, 19, 241) !important;
+    margin: 0;
+}
+
+
+
+header.scrolled,
+header.header-solido {
+    background-color: rgb(22, 19, 241);
+}
+
+header ul a {
+    color: rgb(255, 255, 255) !important;
+}
+
+.site-logo {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(74%) saturate(1230%) hue-rotate(182deg) brightness(102%) contrast(103%);
+    display: block;
+}
+
+header ul a:hover,
+header ul a.active {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #000000 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: #000000 !important;
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse .dropdown-menu {
+        display: none;
+        padding-left: 1rem;
+        border: 0;
+        background: transparent;
+        box-shadow: none;
+    }
+
+    .navbar-collapse .dropdown-menu.show {
+        display: block;
+    }
+
+    .navbar-collapse .dropdown-item {
+        color: #ffffff !important;
+        padding-left: 0;
+    }
+}
+
+/* Contenedor principal del banner */
+.alpina-banner {
+    min-height: 250px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 20px;
+}
+
+/* Lado Izquierdo: Contenedor */
+.alpina-img-side {
+    background-color: #0066df;
+    background-image: radial-gradient(circle at 80% 20%, #00bfff 0%, #0066df 60%);
+    /* Simula las ondas claras del fondo */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.alpina-img-side img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+/* Lado Derecho: Contenedor del Texto */
+.alpina-text-side {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Bloque superior  */
+.text-top-block {
+    background-color: #0056b3;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 15px;
+}
+
+/* Bloque inferior */
+.text-bottom-block {
+    background-color: #e6f4ff;
+    color: #0056b3;
+    font-weight: 900;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1.5;
+    
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+
+
+.alpina-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.alpina-product-bg {
+  background-color: #f4f6f9;
+  min-height: 320px;
+}
+
+.alpina-main-img {
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.alpina-badge {
+  background-color: #e6f4ff;
+  color: #0056b3;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.alpina-title {
+  color: #0056b3;
+  font-weight: 900;
+  font-size: 1.65rem;
+}
+
+.alpina-subtitle {
+  color: #2d3748;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.alpina-description p {
+  color: #2d3748;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Caja de Nutrición */
+.alpina-nutrition-box {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+}
+
+.nutrition-stat {
+  background-color: #f4f6f9;
+  padding: 8px 4px;
+  border-radius: 6px;
+  border: 1px solid #edf2f7;
+}
+
+.nutrition-stat strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #0056b3;
+}
+
+.nutrition-stat small {
+  display: block;
+  font-size: 0.65rem;
+  color: #718096;
+  text-transform: uppercase;
+}
+
+.alpina-highlight {
+  color: #2b6cb0;
+  font-weight: 500;
+}
+
+/* Botones personalizados estilo Alpina */
+.btn-alpina-primary {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+.btn-alpina-primary:hover {
+  background-color: #004494;
+  color: #ffffff;
+}
+
+.btn-alpina-outline {
+  background-color: transparent;
+  color: #0056b3;
+  border: 2px solid #0056b3;
+  font-weight: 700;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+.btn-alpina-outline:hover {
+  background-color: #e6f4ff;
+  color: #0056b3;
+  border-color: #0056b3;
+}
+
+
+
+
+
+
+@media (max-width: 992px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .contenedor-imagen-1,
+    .contenedor-texto {
+        width: 100%;
+    }
+
+    .row-2-font {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .row-2-font {
+        font-size: 1.8rem;
+    }
+
+    .contenedor-texto {
+        height: auto;
+    }
+
+    .tira-colores {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .text-top-block {
+        font-size: 1.8rem;
+    }
+
+    .text-bottom-block {
+        font-size: 1.4rem;
+    }
+}

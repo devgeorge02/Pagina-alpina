@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alpina | Iniciar Sesión</title>
+
+    <!-- Google Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/11e5fb4efb.js" crossorigin="anonymous" defer></script>
+
+    <!-- Bootstrap CSS v5.3.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="../../css/admin/login.css">
+</head>
+
+<body class="" >
+    
+    
+    <main class="login-main">
+        
+        <div class="login-container">
+            <!-- Encabezado / Logo -->
+            <header class="login-header">
+                <img src="https://alpina.com/media/logo/stores/33/Logo_Alpina_menu_2x.png" width="80" height="58"
+                    alt="Logo de Alpina" onerror="this.src='https://placehold.co/80x58?text=Alpina'">
+                <h2>¡Bienvenido de nuevo!</h2>
+                <p>Ingresa tus credenciales para acceder a tu cuenta.</p>
+            </header>
+
+            <!-- Formulario -->
+            <form id="loginForm" class="needs-validation" novalidate>
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="userEmail" class="form-label">Correo electrónico</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-regular fa-envelope"></i></span>
+                        <input type="email" class="form-control" id="userEmail" placeholder="ejemplo@alpina.com"
+                            required>
+                        <div class="invalid-feedback">
+                            Por favor, introduce un correo electrónico válido.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contraseña -->
+                <div class="mb-3">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                        <label for="userPassword" class="form-label mb-0">Contraseña</label>
+                        <a href="#" class="text-decoration-none small" style="color: var(--primary-color);">¿La
+                            olvidaste?</a>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="fa-solid fa-lock"></i></span>
+                        <input type="password" class="form-control" id="userPassword" placeholder="••••••••" required
+                            minlength="6">
+                        <span class="input-group-text password-toggle" id="togglePassword">
+                            <i class="fa-regular fa-eye"></i>
+                        </span>
+                        <div class="invalid-feedback">
+                            La contraseña debe tener al menos 6 caracteres.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recordarme -->
+                <div class="mb-4 form-check d-flex align-items-center">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label small text-muted ms-2" for="rememberMe">Recordar mi sesión</label>
+                </div>
+
+                <!-- Botón de Envío -->
+                <button type="submit"
+                    class="btn btn-login w-100 d-flex align-items-center justify-content-center gap-2">
+                    <span>Iniciar Sesión</span>
+                    <i class="fa-solid fa-arrow-right-to-bracket fs-5"></i>
+                </button>
+
+                <div class="login-footer">
+                    <p class="mb-0">¿No tienes una cuenta? <a href="#">Regístrate aquí</a></p>
+                </div>
+
+            </form>
+
+            <!-- Registro / Footer -->
+            <div class="logout text-center mt-3">
+                <a href="../../index.html" class="text-decoration-none">salir</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="login-page-footer text-center mt-4 text-white">
+        <p class="small mb-0">© 2026 Alpina - Panel de acceso.</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="../../js/admin/login.js"></script>
+</body>
+
+</html>

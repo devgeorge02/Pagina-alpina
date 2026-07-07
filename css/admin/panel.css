@@ -1,0 +1,102 @@
+
+:root {
+    --sidebar-bg: rgb(28, 156, 230); 
+    --sidebar-hover: rgb(20, 130, 200);
+    --text-light: #ffffff;
+    --border-color: #dcdcdc;
+}
+
+/* Forzar esquinas completamente filosas en todo el sistema */
+.card, .form-control, .btn, .nav-link, .table, th, td {
+    border-radius: 0px !important;
+}
+
+body {
+    background-color: #f8fafc;
+    overflow-x: hidden;
+}
+
+/* Contenedor Principal Flexbox según la imagen */
+.admin-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* BARRA LATERAL (Inspirada exactamente en tu imagen) */
+.sidebar {
+    width: 240px;
+    background-color: var(--sidebar-bg);
+    color: var(--text-light);
+    flex-shrink: 0;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-user {
+    padding: 30px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-user i {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.85);
+    padding: 15px 20px;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.15s ease;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link.active {
+    background-color: var(--sidebar-hover);
+    color: var(--text-light) !important;
+    padding-left: 25px; /* Efecto sutil de desplazamiento lineal */
+}
+
+/* ÁREA DE CONTENIDO (Lado derecho de la imagen) */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.content-header-line {
+    font-size: 28px;
+    font-weight: 400;
+    color: #111111;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #111111; /* Línea recta horizontal idéntica a la referencia */
+    margin-bottom: 30px;
+}
+
+/* Tabla Administrativa */
+.table-admin {
+    border: 1px solid var(--border-color);
+}
+
+.table-admin th {
+    background-color: #f1f5f9;
+    color: #334155;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+/* Control Responsivo de la barra lateral en pantallas pequeñas */
+@media (max-width: 768px) {
+    .admin-wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+}

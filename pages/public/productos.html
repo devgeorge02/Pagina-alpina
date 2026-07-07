@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Estilo Alpina</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/public/productos.css">
+    <link rel="stylesheet" href="../../css/public/components.css">
+    <script src="https://kit.fontawesome.com/11e5fb4efb.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+
+    <header class="sticky-top" id="siteHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html">
+                    <img src="https://alpina.com/media/wysiwyg/Alpina-logo.png" width="70" height="50"
+                        alt="Logo oficial de Alpina">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Abrir menú de navegación">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Nosotros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="historia.html">Nuestra historia</a></li>
+                                <li><a class="dropdown-item" href="../admin/login.html">Empleados</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contáctanos</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" action="/buscar" method="GET">
+                        <input class="form-control me-2" type="search" placeholder="Buscar productos..."
+                            aria-label="Buscar en el sitio" />
+                        <button class="btn btn-outline-light" type="submit" aria-label="Ejecutar búsqueda">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section aria-label="Banner de categoría">
+            <div class="container-fluid px-4">
+                <div class="row alpina-banner g-0 shadow-sm">
+                    <div class="col-md-6 alpina-img-side">
+                        <img src="https://alpina.com/media/wysiwyg/Categoria_todos_DESKTOP_IMG.png"
+                            alt="Productos Alpina">
+                    </div>
+                    <div class="col-md-6 alpina-text-side">
+                        <div class="text-top-block">
+                            TODOS
+                        </div>
+                        <div class="text-bottom-block">
+                            Por un mundo delicioso
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="alpina-card container-fluid shadow-sm rounded-4 p-4 mb-4">
+            <div class="row g-4 align-items-center">
+                <section class="col-lg-5 text-center" aria-label="Imagen del producto">
+                    <div class="alpina-product-bg rounded-4 p-3 d-flex align-items-center justify-content-center">
+                        <img src="https://alpina.com/media/catalog/product/cache/27defdc4d2877e4b183fddab68dad6a4/7/7/7702001161096_2.png"
+                            alt="Crema de leche Alpina Caja 200 ml" class="img-fluid alpina-main-img">
+                    </div>
+                </section>
+
+                <section class="col-lg-7" aria-label="Detalles del producto">
+                    <span class="badge text-uppercase mb-2 alpina-badge">Gama 'Tradizionale'</span>
+                    <h1 class="alpina-title mb-3">Crema de leche Alpina Caja 200 ml</h1>
+
+                    <section class="alpina-description mb-4" aria-label="Descripción del producto">
+                        <h2 class="alpina-subtitle">Descripción del producto:</h2>
+                        <p><strong>Ingredientes:</strong> Sémola de trigo duro seleccionado (Triticum durum).</p>
+                        <p>Proceso de producción tradicional: Extrusión en moldes de bronce para una textura rugosa
+                            óptima para la salsa.</p>
+                        <p class="text-muted"><small>Contiene gluten. Puede contener trazas de huevo y soja.</small></p>
+                    </section>
+
+                    <section class="alpina-nutrition-box rounded-3 p-3 mb-4" aria-label="Información nutricional">
+                        <h2 class="alpina-subtitle mb-2">Información Nutricional Medio <span
+                                class="text-muted font-monospace">(por 100g)</span></h2>
+                        <div class="row g-2 text-center">
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>352 kcal</strong><small>Energía</small></div>
+                            </div>
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>1.5g</strong><small>Grasas</small></div>
+                            </div>
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>71g</strong><small>Carbohidratos</small></div>
+                            </div>
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>3g</strong><small>Fibra</small></div>
+                            </div>
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>12g</strong><small>Proteínas</small></div>
+                            </div>
+                            <div class="col-4 col-sm-2">
+                                <div class="nutrition-stat"><strong>0.01g</strong><small>Sal</small></div>
+                            </div>
+                        </div>
+                        <p class="alpina-highlight mt-2 mb-0 text-center"><small>Alto contenido en fibra y fuente de
+                                energía de liberación lenta.</small></p>
+                    </section>
+
+                    <nav class="d-flex flex-wrap gap-2" aria-label="Acciones del producto">
+                        <a href="#" class="btn btn-alpina-primary px-4 py-2 d-inline-flex align-items-center">
+                            <svg class="me-2" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.69-4.98c-.202-.101-1.194-.588-1.379-.656-.185-.069-.32-.103-.454.101-.135.202-.52.657-.637.793-.117.135-.235.151-.437.051-2.01-.1-3.608-.738-5.143-2.074-.117-.202.117-.188.336-.426.198-.214.235-.32.353-.535.117-.215.059-.404-.029-.572-.089-.168-.454-1.096-.622-1.502-.164-.395-.33-.341-.454-.347-.116-.006-.25-.006-.384-.006-.135 0-.353.05-.538.253-.185.202-.707.691-.707 1.684s.723 1.953.824 2.088c.101.135 1.424 2.174 3.45 3.051.482.208.859.333 1.152.426.484.154.925.132 1.273.08.388-.058 1.195-.488 1.362-.96.166-.472.166-.875.117-.96-.05-.085-.185-.135-.388-.236" />
+                            </svg>
+                            Contactar por WhatsApp
+                        </a>
+                        <a href="#" class="btn btn-alpina-outline px-4 py-2">Solicitar una cotización</a>
+                    </nav>
+                </section>
+            </div>
+        </article>
+
+
+
+        <div class="contenedor-tarjeta">
+            <!-- Tarjeta 1 -->
+            <div class="product-card shadow-sm">
+                <div class="product-img-container">
+                    <img src="../../img/cards/1.webp" class="card-img-top" alt="Crema de Leche Finesse Caja 200 ml">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Crema de Leche Finesse Caja 200 ml</h3>
+                    <p class="product-text">Nueva Crema de Leche Alpina Semientera, perfecta para tus preparaciones
+                        cotidianas.</p>
+                    <a href="#" class="btn-product">Ver producto + <i class="bi bi-plus-lg ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="product-card shadow-sm">
+                <div class="product-img-container">
+                    <img src="../../img/cards/2.webp" class="card-img-top" alt="Crema de leche Alpina Caja 200 ml">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Crema de leche Alpina Caja 200 ml</h3>
+                    <p class="product-text">Alpina te trae la deliciosa Crema de Leche tradicional para realzar tus
+                        comidas de forma única.</p>
+                    <a href="#" class="btn-product">Ver producto + <i class="bi bi-plus-lg ms-1"></i></a>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="product-card shadow-sm">
+                <div class="product-img-container">
+                    <img src="../../img/cards/3.webp" class="card-img-top" alt="Queso Parmesano Rallado Alpina 40 g">
+                </div>
+                <div class="product-body">
+                    <h3 class="product-title">Queso Parmesano Rallado 40 g</h3>
+                    <p class="product-text">Alpina te trae el delicioso Queso Parmesano Rallado perfecto para
+                        gratinar tus pastas cotidianas.</p>
+                    <a href="#" class="btn-product">Ver producto + <i class="bi bi-plus-lg ms-1"></i></a>
+                </div>
+            </div>
+
+
+
+
+
+
+    </main>
+
+
+    <script src="../../js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

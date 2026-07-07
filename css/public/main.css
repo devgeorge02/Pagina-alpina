@@ -1,0 +1,344 @@
+/* Base */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #1e293b;
+}
+
+/* Header y navegación */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background: transparent;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled,
+header.header-solido {
+    background-color: rgb(22, 19, 241);
+}
+
+header ul a {
+    color: rgb(255, 255, 255) !important;
+}
+
+.site-logo {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(74%) saturate(1230%) hue-rotate(182deg) brightness(102%) contrast(103%);
+    display: block;
+}
+
+header ul a:hover,
+header ul a.active {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #000000 !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: #000000 !important;
+    background-color: #f8f9fa;
+}
+
+/* Videos del carrusel */
+main > section:first-of-type {
+    position: relative;
+    z-index: 0;
+    margin-top: -76px;
+}
+
+main > section:first-of-type .carousel {
+    position: relative;
+    z-index: 0;
+}
+
+main > section:first-of-type .carousel-item video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Sección productos */
+.section-title {
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #1a365d;
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.contenedor-tarjeta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+   
+
+
+  
+}
+
+
+
+
+
+
+
+
+/* Historia */
+.article-1 {
+    display: flex;
+    padding: 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+   
+}
+
+.contenedor-img-2 {
+    background-color: aquamarine;
+    margin-right: 20px;
+}
+
+.contenedor-img-2 img {
+    width: 500px;
+}
+
+.contenedor-txt-2 {
+    padding: 60px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    text-align: start;
+}
+
+.contenedor-txt-2 h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(7, 1, 90);
+}
+
+.marcas {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Clientes */
+.clientes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor-img-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    background-color: rgb(255, 255, 255);
+    gap: 20px;
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.contenedor-img-3 img {
+    width: 100px;
+    height: auto;
+    filter: grayscale(20%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.contenedor-img-3 img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fila de eslogan superior */
+.footer-cta {
+    background-color: #0046c0; 
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Contenedor del contenido principal */
+.footer-content {
+    background-color: #0052cc; 
+}
+
+.footer-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.footer-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+/* Enlaces y transiciones */
+.footer-link {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff !important;
+    padding-left: 4px;
+}
+
+/* Iconos de Redes Sociales */
+.iconos a {
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.iconos a:hover {
+    color: #ffffff !important;
+    transform: scale(1.15);
+}
+
+/* Botón redondeado de contacto */
+.btn-contact-footer {
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-contact-footer:hover {
+    background-color: #ffffff;
+    color: #0052cc !important;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Bloque Secundario Legal */
+.footer-secondary {
+    background-color: #0046c0; 
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-img {
+    filter: brightness(0) invert(1); 
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.footer-brand-img:hover {
+    opacity: 1;
+}
+
+/* Bloque Deep del Copyright final */
+.footer-deep {
+    background-color: #003bb3;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Tipografías de ayuda */
+.font-semibold {
+    font-weight: 600;
+}
+.tracking-wide {
+    letter-spacing: 0.5px;
+}
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+
+
+
+
+/* Responsive */
+@media (max-width: 992px) {
+
+    header {
+    position: sticky;
+    top: 0;
+  
+     background-color: blue !important
+    
+}
+        
+     .carousel-inner
+        {
+            margin-top: 76px;
+           
+        }
+
+    .article-1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contenedor-img-2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contenedor-img-2 img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contenedor-txt-2 {
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+
+    header {
+    position: sticky;
+
+     background-color: blue !important
+}
+
+
+    .row-2 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px;
+    }
+
+    .contenedor-img-3 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}

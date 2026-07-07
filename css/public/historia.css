@@ -1,0 +1,194 @@
+
+
+*
+{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header y navegación */
+header {
+    position: sticky;
+    background-color: rgb(22, 19, 241);
+    margin: 0;
+}
+
+
+
+header.scrolled,
+header.header-solido {
+    background-color: rgb(22, 19, 241);
+}
+
+header ul a {
+    color: rgb(255, 255, 255) !important;
+}
+
+.site-logo {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(74%) saturate(1230%) hue-rotate(182deg) brightness(102%) contrast(103%);
+    display: block;
+}
+
+header ul a:hover,
+header ul a.active {
+    color: #ffffff !important;
+    text-decoration: underline;
+}
+
+.navbar .dropdown-menu {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.12);
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #111827 !important;
+    padding: 0.7rem 1rem;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    color: #0f172a !important;
+    background-color: #f3f4f6;
+}
+
+.navbar .dropdown-toggle::after {
+    margin-left: 0.35rem;
+    vertical-align: 0.15em;
+}
+
+
+
+/* Footer */
+
+
+footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Fila de eslogan superior */
+.footer-cta {
+    background-color: #0046c0; 
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Contenedor del contenido principal */
+.footer-content {
+    background-color: #0052cc; 
+}
+
+.footer-title {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #ffffff;
+}
+
+.footer-subtitle {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #ffffff;
+}
+
+/* Enlaces y transiciones */
+.footer-link {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff !important;
+    padding-left: 4px;
+}
+
+/* Iconos de Redes Sociales */
+.iconos a {
+    color: rgba(255, 255, 255, 0.75) !important;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.iconos a:hover {
+    color: #ffffff !important;
+    transform: scale(1.15);
+}
+
+/* Botón redondeado de contacto */
+.btn-contact-footer {
+    border-width: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+.btn-contact-footer:hover {
+    background-color: #ffffff;
+    color: #0052cc !important;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+
+/* Bloque Secundario Legal */
+.footer-secondary {
+    background-color: #0046c0; 
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-brand-img {
+    filter: brightness(0) invert(1); 
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.footer-brand-img:hover {
+    opacity: 1;
+}
+
+/* Bloque Deep del Copyright final */
+.footer-deep {
+    background-color: #003bb3;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+/* Tipografías de ayuda */
+.font-semibold {
+    font-weight: 600;
+}
+.tracking-wide {
+    letter-spacing: 0.5px;
+}
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+@media (max-width: 992px) {
+    .navbar-nav {
+        gap: 0.25rem;
+    }
+
+    .footer-content,
+    .footer-secondary {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .dropdown-menu {
+        margin-top: 0.25rem;
+    }
+
+    .footer-title,
+    .footer-subtitle {
+        font-size: 14px;
+    }
+}
