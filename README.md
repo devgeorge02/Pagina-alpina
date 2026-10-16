@@ -1,4 +1,4 @@
-<img width="1362" height="642" alt="image" src="https://github.com/user-attachments/assets/4f865815-c6b1-4c70-b0a0-f742b6dc72a2" /># Página Alpina
+Página Alpina
 
 Sitio web estático de ejemplo para la página "Pagina-alpina".
 
@@ -22,9 +22,13 @@ Proyecto estático en HTML, CSS y JavaScript que contiene páginas públicas y u
 - [videos/](videos/) — recursos de video.
 
 ## Imágenes
+
+<img width="1366" height="647" alt="image" src="https://github.com/user-attachments/assets/42c4f910-e759-4440-8cf3-6ac36efa49b4" />
+
 <img width="1365" height="681" alt="image" src="https://github.com/user-attachments/assets/a85ca3a4-1933-4bf8-9a79-cb2613c30fa9" />
 
-<img width="1366" height="687" alt="image" src="https://github.com/user-attachments/assets/af144755-c67d-469d-820a-20b7b9ae71fc" />
+<img width="1365" height="639" alt="image" src="https://github.com/user-attachments/assets/1f4d5b51-7939-4cbc-bd29-e6fe2e2d7dbe" />
+
 
 <img width="1366" height="641" alt="image" src="https://github.com/user-attachments/assets/3ca420f1-2ea7-4896-9182-fb1bc22e2324" />
 
